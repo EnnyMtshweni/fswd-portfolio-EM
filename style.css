@@ -1,0 +1,200 @@
+/* =========================================================
+   Enny Mtshweni — Portfolio Stylesheet
+   Design: Dark navy theme, Space Grotesk, amber accent
+   ========================================================= */
+ 
+/* ---- 0. CSS Custom Properties ---- */
+:root {
+  --color-bg:         #0A0F1E;
+  --color-bg-card:    #111827;
+  --color-bg-raised:  #161E30;
+  --color-border:     rgba(255, 255, 255, 0.07);
+ 
+  --color-text:       #F0EEE8;
+  --color-text-muted: #8892A4;
+  --color-text-soft:  #B8C0CC;
+ 
+  --color-accent:     #E8A838;
+  --color-accent-dim: rgba(232, 168, 56, 0.15);
+  --color-accent-hover: #F0B84A;
+ 
+  --color-success:    #4ADE80;
+  --color-error:      #F87171;
+ 
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-mono:    'Space Mono', monospace;
+ 
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+ 
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow-lift: 0 8px 40px rgba(0, 0, 0, 0.5);
+ 
+  --transition: 0.25s ease;
+}
+ 
+/* ---- 1. Reset & Base ---- */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+ 
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+ 
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+  overflow-x: hidden;
+}
+ 
+/* ---- 2. Typography ---- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-text);
+}
+ 
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+ 
+a:hover {
+  color: var(--color-accent-hover);
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+/* ---- 3. Utilities ---- */
+.section-pad {
+  padding: 6rem 0;
+}
+ 
+.text-accent {
+  color: var(--color-accent);
+}
+ 
+.mono-tag {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+}
+ 
+.section-eyebrow {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: 0.75rem;
+}
+ 
+.section-title {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--color-text);
+}
+ 
+.section-subtext {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  max-width: 540px;
+  margin: 0.75rem auto 0;
+}
+ 
+/* ---- 4. Navbar ---- */
+#mainNav {
+  background-color: rgba(10, 15, 30, 0.85);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+  padding: 1rem 0;
+  transition: padding var(--transition), box-shadow var(--transition);
+}
+ 
+#mainNav.scrolled {
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
+}
+ 
+.navbar-brand {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text) !important;
+  letter-spacing: -0.02em;
+}
+ 
+.brand-bracket {
+  color: var(--color-accent);
+}
+ 
+.navbar-nav .nav-link {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted) !important;
+  padding: 0.4rem 0.9rem !important;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background-color var(--transition);
+}
+ 
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: var(--color-text) !important;
+  background-color: var(--color-accent-dim);
+}
+ 
+/* Custom hamburger toggler */
+.navbar-toggler {
+  padding: 6px 0;
+}
+ 
+.toggler-line {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--color-text);
+  margin: 5px 0;
+  transition: var(--transition);
+}
+ 
+.navbar-toggler[aria-expanded="true"] .toggler-line:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.navbar-toggler[aria-expanded="true"] .toggler-line:nth-child(2) {
+  opacity: 0;
+}
+.navbar-toggler[aria-expanded="true"] .toggler-line:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+ 
+.btn-accent-outline {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: 0.4rem 1rem;
+  transition: background-color var(--transition), color var(--transition);
+}
+ 
+.btn-accent-outline:hover {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+}
