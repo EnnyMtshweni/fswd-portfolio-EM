@@ -1,0 +1,32 @@
+# Enny Mtshweni — Developer Portfolio
+
+A personal developer portfolio built as part of the fswd deleverables .
+
+## Tech Stack
+- HTML5
+- CSS3 (Custom Properties, Flexbox, Grid)
+- Bootstrap 5
+- JavaScript (vanilla ES6+)
+
+## Features
+- Responsive design (mobile-first)
+- Animated typewriter hero text
+- Scroll-triggered card reveal
+- Active navbar link tracking
+- Project cards with hover overlay
+- Contact form with validation and feedback
+- Accessible (skip link, ARIA labels, keyboard-navigable)
+- Dark theme with amber accent
+
+## Sections
+1. Hero
+2. About
+3. Skills
+4. Projects
+5. Contact
+
+## Live Demo
+_Link added after deployment_
+
+## Author
+Enny Mtshweni — [ennymtshweni03@gmail.com](mailto:ennymtshweni03@gmail.com)
