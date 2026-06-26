@@ -42,3 +42,48 @@ navLinks.forEach(link => {
   });
 });
  
+
+// ---- 4. Typewriter effect in hero ----
+const typewriterEl = document.getElementById('typewriter');
+const roles = [
+  'Full-Stack Developer',
+  'Data Analyst',
+  'Problem Solver',
+  'UI Builder',
+];
+ 
+let roleIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+let typeTimeout;
+ 
+function typeWriter() {
+  const currentRole = roles[roleIndex];
+ 
+  if (!isDeleting) {
+    // Typing forward
+    typewriterEl.textContent = currentRole.slice(0, charIndex + 1);
+    charIndex++;
+    if (charIndex === currentRole.length) {
+      // Pause at end of word before deleting
+      isDeleting = true;
+      typeTimeout = setTimeout(typeWriter, 1800);
+      return;
+    }
+  } else {
+    // Deleting
+    typewriterEl.textContent = currentRole.slice(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      isDeleting = false;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+  }
+ 
+  const speed = isDeleting ? 60 : 90;
+  typeTimeout = setTimeout(typeWriter, speed);
+}
+ 
+typeWriter();
+ 
+ 
