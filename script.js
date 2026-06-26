@@ -87,3 +87,27 @@ function typeWriter() {
 typeWriter();
  
  
+// ---- 5. Scroll reveal (Intersection Observer) ----
+const revealItems = document.querySelectorAll('.reveal-item');
+ 
+if (revealItems.length > 0) {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          // Stagger delay by index within its parent group
+          const siblings = Array.from(entry.target.parentElement.parentElement.querySelectorAll('.reveal-item'));
+          const idx = siblings.indexOf(entry.target.parentElement);
+          const delay = Math.max(0, idx * 80);
+          setTimeout(() => {
+            entry.target.classList.add('revealed');
+          }, delay);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+ 
+  revealItems.forEach(item => observer.observe(item));
+}
