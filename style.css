@@ -435,3 +435,127 @@ img {
   50%  { opacity: 0.4; }
   100% { opacity: 1; transform: scaleY(1); }
 }
+
+/* ---- About ---- */
+.about-section {
+  background-color: var(--color-bg-card);
+}
+ 
+.section-header {
+  max-width: 600px;
+}
+ 
+.about-img-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+ 
+.about-photo {
+  width: 100%;
+  max-width: 380px;
+  height: 460px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: var(--radius-lg);
+  position: relative;
+  z-index: 1;
+  border: 2px solid var(--color-border);
+}
+ 
+.about-img-backdrop {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: -16px;
+  bottom: -16px;
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius-lg);
+  z-index: 0;
+}
+ 
+.about-badge {
+  position: absolute;
+  bottom: 24px;
+  right: -8px;
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  z-index: 2;
+  box-shadow: 0 4px 16px rgba(232, 168, 56, 0.4);
+}
+ 
+.about-text {
+  color: var(--color-text-soft);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+ 
+.about-details-grid {
+  display: grid;
+  gap: 0.75rem;
+}
+ 
+.detail-row {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  align-items: center;
+}
+ 
+.detail-key {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  min-width: 80px;
+}
+ 
+.detail-val {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  color: var(--color-text);
+}
+ 
+.detail-val a {
+  color: var(--color-text);
+}
+ 
+.detail-val a:hover {
+  color: var(--color-accent);
+}
+ 
+.available-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: rgba(74, 222, 128, 0.1);
+  color: var(--color-success);
+  font-size: 0.82rem;
+  padding: 0.2rem 0.7rem;
+  border-radius: 100px;
+  border: 1px solid rgba(74, 222, 128, 0.25);
+}
+ 
+.pulse-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background-color: var(--color-success);
+  border-radius: 50%;
+  animation: pulse 1.8s ease-in-out infinite;
+}
+ 
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.8); }
+}
