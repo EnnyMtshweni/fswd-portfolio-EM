@@ -940,3 +940,133 @@ img {
   border: 1px solid rgba(248, 113, 113, 0.25);
 }
  
+/* ---- Footer ---- */
+.site-footer {
+  background-color: var(--color-bg-card);
+  border-top: 1px solid var(--color-border);
+  padding: 2rem 0;
+}
+ 
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+ 
+.footer-brand {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-text) !important;
+}
+ 
+.footer-copy {
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+ 
+.back-to-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-muted);
+  transition: border-color var(--transition), color var(--transition), background-color var(--transition);
+}
+ 
+.back-to-top:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  background-color: var(--color-accent-dim);
+}
+ 
+/* ---- 11. Scroll reveal animation ---- */
+.reveal-item {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+ 
+.reveal-item.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+/* ---- 12. Skip link ---- */
+.skip-link:focus {
+  position: fixed;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: var(--color-accent);
+  color: var(--color-bg);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  z-index: 9999;
+}
+ 
+/* ---- 13. Responsive overrides ---- */
+@media (max-width: 991.98px) {
+  .section-pad {
+    padding: 4rem 0;
+  }
+ 
+  .hero-section {
+    padding: 6rem 0 4rem;
+    min-height: auto;
+  }
+ 
+  .hero-name {
+    font-size: clamp(2.5rem, 10vw, 4rem);
+  }
+ 
+  .about-photo {
+    max-width: 300px;
+    height: 360px;
+  }
+ 
+  .about-img-backdrop {
+    display: none;
+  }
+ 
+  .about-badge {
+    right: 0;
+  }
+ 
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+ 
+@media (max-width: 575.98px) {
+  .hero-stats {
+    gap: 1.5rem;
+  }
+ 
+  .stat-divider {
+    display: none;
+  }
+ 
+  .code-window {
+    display: none;
+  }
+ 
+  .project-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+ 
+/* ---- 14. Reduced motion ---- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
