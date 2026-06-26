@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enny Mtshweni — Developer Portfolio</title>
- 
+
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <!-- Bootstrap Icons -->
@@ -15,7 +15,11 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <!-- ===================== NAVBAR ===================== -->
+
+  <!-- Skip link for accessibility -->
+  <a class="skip-link visually-hidden-focusable" href="#main">Skip to main content</a>
+
+  <!-- ===================== NAVBAR ===================== -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav" aria-label="Main navigation">
     <div class="container">
       <a class="navbar-brand" href="#home">
@@ -48,37 +52,38 @@
       </div>
     </div>
   </nav>
- 
-  <main id="main"> 
+
+  <main id="main">
 
     <!-- ===================== HERO ===================== -->
     <section class="hero-section" id="home">
       <div class="container h-100">
         <div class="row h-100 align-items-center">
-          <div class="col-lg-8">
- 
+          <div class="col-lg-9 col-xl-8">
+
             <p class="hero-eyebrow">
-              <span class="mono-tag">&lt;!-- Welcome to my creative world --&gt;</span>
+              <span class="mono-tag">&lt;!-- Welcome to my--&gt;</span>
             </p>
- 
+
             <h1 class="hero-name">
               Enny<br />
               <span class="hero-name-accent">Mtshweni</span>
             </h1>
- 
+
             <p class="hero-role">
               <span class="mono-tag">const role = "</span><span id="typewriter"></span><span class="cursor-blink">|</span><span class="mono-tag">"</span>
             </p>
- 
+
             <p class="hero-bio">
               Full-stack developer &amp; data analyst based in Johannesburg, SA.
-              Through coding and data analysis, solutions that make everyday tasks simpler and more efficient are created.
- 
+              Building digital products that are clean, fast, and built with purpose.
+            </p>
+
             <div class="hero-cta d-flex gap-3 flex-wrap mt-4">
               <a href="#projects" class="btn btn-primary-custom">View My Work <i class="bi bi-arrow-right ms-1"></i></a>
               <a href="#contact" class="btn btn-ghost-custom">Let's Talk</a>
             </div>
- 
+
             <div class="hero-stats d-flex gap-4 mt-5 flex-wrap">
               <div class="stat-item">
                 <span class="stat-num">6</span>
@@ -90,53 +95,28 @@
                 <span class="stat-label">Technologies</span>
               </div>
             </div>
- 
+
           </div>
- 
-          <div class="col-lg-4 d-none d-lg-flex justify-content-center align-items-center">
-            <div class="code-window">
-              <div class="code-window-bar">
-                <span class="win-dot red"></span>
-                <span class="win-dot yellow"></span>
-                <span class="win-dot green"></span>
-                <span class="win-filename">enny.js</span>
-              </div>
-              <pre class="code-body"><code><span class="c-keyword">const</span> <span class="c-var">developer</span> = {
-  <span class="c-key">name</span>: <span class="c-str">"Enny Mtshweni"</span>,
-  <span class="c-key">location</span>: <span class="c-str">"Johannesburg"</span>,
-  <span class="c-key">stack</span>: [
-    <span class="c-str">"HTML"</span>, <span class="c-str">"CSS"</span>,
-    <span class="c-str">"JavaScript"</span>,
-    <span class="c-str">"Python"</span>, <span class="c-str">"Django"</span>,
-    <span class="c-str">"SQL"</span>
-  ],
-  <span class="c-key">available</span>: <span class="c-bool">true</span>,
-  <span class="c-key">hire</span>: <span class="c-fn">() =&gt;</span> <span class="c-str">"Let's build!"</span>
-};</code></pre>
-            </div>
-          </div>
- 
+
+
+
         </div>
       </div>
- 
-      <!-- Scroll indicator -->
-      <div class="scroll-indicator">
-        <span class="scroll-text">scroll</span>
-        <div class="scroll-line"></div>
-      </div>
+
+
     </section>
 
     <!-- ===================== ABOUT ===================== -->
     <section class="about-section section-pad" id="about">
       <div class="container">
- 
+
         <div class="section-header mb-5">
-          <span class="section-eyebrow">01 — About Me</span>
+          <span class="section-eyebrow">01  About Me</span>
           <h2 class="section-title">The Person <span class="text-accent">Behind the Code</span></h2>
         </div>
- 
+
         <div class="row g-5 align-items-center">
- 
+
           <div class="col-lg-5">
             <div class="about-img-wrapper">
               <img
@@ -151,7 +131,7 @@
               </div>
             </div>
           </div>
- 
+
           <div class="col-lg-7">
             <p class="about-text">
               I'm an aspiring full-stack developer with a background in data analytics,
@@ -165,7 +145,7 @@
               full web apps, cleaning datasets, and designing dashboards that tell compelling
               stories through data. I'm always learning, always building.
             </p>
- 
+
             <div class="about-details-grid mt-4">
               <div class="detail-row">
                 <span class="detail-key">Name</span>
@@ -196,29 +176,29 @@
                 </span>
               </div>
             </div>
- 
+
             <div class="mt-4">
               <a href="./assets/Enny Mtshweni resume 277.pdf" download class="btn btn-primary-custom">
                 <i class="bi bi-file-earmark-person me-2"></i> Download CV
               </a>
             </div>
           </div>
- 
+
         </div>
       </div>
     </section>
- 
-      <!-- ===================== SKILLS ===================== -->
+
+    <!-- ===================== SKILLS ===================== -->
     <section class="skills-section section-pad" id="skills">
       <div class="container">
- 
+
         <div class="section-header mb-5">
-          <span class="section-eyebrow">02 — Skills</span>
+          <span class="section-eyebrow">02 Skills</span>
           <h2 class="section-title">What I <span class="text-accent">Work With</span></h2>
         </div>
- 
+
         <div class="row g-4">
- 
+
           <div class="col-md-6 col-lg-3">
             <div class="skill-card h-100 reveal-item">
               <div class="skill-card-icon">
@@ -234,7 +214,7 @@
               </ul>
             </div>
           </div>
- 
+
           <div class="col-md-6 col-lg-3">
             <div class="skill-card h-100 reveal-item">
               <div class="skill-card-icon">
@@ -249,7 +229,7 @@
               </ul>
             </div>
           </div>
- 
+
           <div class="col-md-6 col-lg-3">
             <div class="skill-card h-100 reveal-item">
               <div class="skill-card-icon">
@@ -265,7 +245,7 @@
               </ul>
             </div>
           </div>
- 
+
           <div class="col-md-6 col-lg-3">
             <div class="skill-card h-100 reveal-item">
               <div class="skill-card-icon">
@@ -276,14 +256,13 @@
                 <li>Git &amp; GitHub</li>
                 <li>VS Code</li>
                 <li>Netlify / GitHub Pages</li>
-                <li>Figma (basics)</li>
                 <li>Command Line</li>
               </ul>
             </div>
           </div>
- 
+
         </div>
- 
+
         <!-- Tech badge strip -->
         <div class="tech-strip mt-5">
           <span class="tech-badge">HTML</span>
@@ -298,20 +277,21 @@
           <span class="tech-badge">Power BI</span>
           <span class="tech-badge">Git</span>
         </div>
- 
+
       </div>
     </section>
-  <!-- ===================== PROJECTS ===================== -->
+
+    <!-- ===================== PROJECTS ===================== -->
     <section class="projects-section section-pad" id="projects">
       <div class="container">
- 
+
         <div class="section-header mb-5">
-          <span class="section-eyebrow">03 — Projects</span>
+          <span class="section-eyebrow">03 Projects</span>
           <h2 class="section-title">Selected <span class="text-accent">Work</span></h2>
         </div>
- 
+
         <div class="row g-4">
- 
+
           <!-- Project 1: Tesla -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100 reveal-item">
@@ -348,7 +328,7 @@
               </div>
             </article>
           </div>
- 
+
           <!-- Project 2: Netflix -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100 reveal-item">
@@ -385,7 +365,7 @@
               </div>
             </article>
           </div>
- 
+
           <!-- Project 3: YouTube -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100 reveal-item">
@@ -422,7 +402,7 @@
               </div>
             </article>
           </div>
- 
+
           <!-- Project 4: Global Layoffs -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100 reveal-item">
@@ -460,7 +440,7 @@
               </div>
             </article>
           </div>
- 
+
           <!-- Project 5: Contact Book -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100 reveal-item">
@@ -498,7 +478,7 @@
               </div>
             </article>
           </div>
- 
+
           <!-- Project 6: To-Do List -->
           <div class="col-md-6 col-lg-4">
             <article class="project-card h-100 reveal-item">
@@ -536,30 +516,29 @@
               </div>
             </article>
           </div>
- 
+
         </div>
       </div>
     </section>
 
-    
     <!-- ===================== CONTACT ===================== -->
     <section class="contact-section section-pad" id="contact">
       <div class="container">
- 
+
         <div class="section-header mb-5 text-center">
-          <span class="section-eyebrow">04 — Contact</span>
+          <span class="section-eyebrow">04 Contact</span>
           <h2 class="section-title">Let's <span class="text-accent">Work Together</span></h2>
           <p class="section-subtext">Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
         </div>
- 
+
         <div class="row g-5 justify-content-center">
- 
+
           <!-- Contact info column -->
           <div class="col-lg-4">
             <div class="contact-info-card">
               <h3 class="contact-info-heading">Get in touch</h3>
               <p class="contact-info-text">I'm currently available for freelance and junior developer roles. Let's build something great together.</p>
- 
+
               <ul class="contact-detail-list">
                 <li>
                   <span class="contact-detail-icon"><i class="bi bi-envelope"></i></span>
@@ -574,7 +553,7 @@
                   <span>Johannesburg, South Africa</span>
                 </li>
               </ul>
- 
+
               <div class="social-row mt-4">
                 <a href="https://github.com/EnnyMtshweni" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
                   <i class="bi bi-github"></i>
@@ -588,11 +567,11 @@
               </div>
             </div>
           </div>
- 
+
           <!-- Contact form column -->
           <div class="col-lg-7">
             <form class="contact-form" id="contactForm" novalidate>
- 
+
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label for="nameField" class="form-label">Full Name <span class="required-star">*</span></label>
@@ -606,7 +585,7 @@
                   />
                   <div class="invalid-feedback">Please enter your name.</div>
                 </div>
- 
+
                 <div class="col-sm-6">
                   <label for="emailField" class="form-label">Email Address <span class="required-star">*</span></label>
                   <input
@@ -619,7 +598,7 @@
                   />
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
- 
+
                 <div class="col-12">
                   <label for="subjectField" class="form-label">Subject</label>
                   <input
@@ -630,7 +609,7 @@
                     placeholder="What's this about?"
                   />
                 </div>
- 
+
                 <div class="col-12">
                   <label for="messageField" class="form-label">Message <span class="required-star">*</span></label>
                   <textarea
@@ -643,7 +622,7 @@
                   ></textarea>
                   <div class="invalid-feedback">Please enter your message.</div>
                 </div>
- 
+
                 <div class="col-12">
                   <button type="submit" class="btn btn-primary-custom w-100 py-3" id="submitBtn">
                     <span class="btn-text">Send Message <i class="bi bi-send ms-2"></i></span>
@@ -652,7 +631,7 @@
                     </span>
                   </button>
                 </div>
- 
+
                 <!-- Form feedback -->
                 <div class="col-12">
                   <div id="formSuccess" class="form-feedback success d-none">
@@ -662,16 +641,17 @@
                     <i class="bi bi-exclamation-circle me-2"></i> Something went wrong. Please email me directly.
                   </div>
                 </div>
- 
+
               </div>
             </form>
           </div>
- 
+
         </div>
       </div>
     </section>
+
   </main>
- 
+
   <!-- ===================== FOOTER ===================== -->
   <footer class="site-footer">
     <div class="container">
@@ -688,11 +668,11 @@
       </div>
     </div>
   </footer>
- 
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Custom JS -->
-  <script src="js/script.js"></script>
- 
+  <script src="./script.js"></script>
+
 </body>
 </html>
