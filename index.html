@@ -540,4 +540,137 @@
         </div>
       </div>
     </section>
+
+    
+    <!-- ===================== CONTACT ===================== -->
+    <section class="contact-section section-pad" id="contact">
+      <div class="container">
+ 
+        <div class="section-header mb-5 text-center">
+          <span class="section-eyebrow">04 — Contact</span>
+          <h2 class="section-title">Let's <span class="text-accent">Work Together</span></h2>
+          <p class="section-subtext">Have a project in mind, a question, or just want to say hi? My inbox is always open.</p>
+        </div>
+ 
+        <div class="row g-5 justify-content-center">
+ 
+          <!-- Contact info column -->
+          <div class="col-lg-4">
+            <div class="contact-info-card">
+              <h3 class="contact-info-heading">Get in touch</h3>
+              <p class="contact-info-text">I'm currently available for freelance and junior developer roles. Let's build something great together.</p>
+ 
+              <ul class="contact-detail-list">
+                <li>
+                  <span class="contact-detail-icon"><i class="bi bi-envelope"></i></span>
+                  <a href="mailto:ennymtshweni03@gmail.com">ennymtshweni03@gmail.com</a>
+                </li>
+                <li>
+                  <span class="contact-detail-icon"><i class="bi bi-telephone"></i></span>
+                  <span>+27 76 051 8082</span>
+                </li>
+                <li>
+                  <span class="contact-detail-icon"><i class="bi bi-geo-alt"></i></span>
+                  <span>Johannesburg, South Africa</span>
+                </li>
+              </ul>
+ 
+              <div class="social-row mt-4">
+                <a href="https://github.com/EnnyMtshweni" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/enny-mtshweni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="mailto:ennymtshweni03@gmail.com" aria-label="Email" class="social-link">
+                  <i class="bi bi-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+ 
+          <!-- Contact form column -->
+          <div class="col-lg-7">
+            <form class="contact-form" id="contactForm" novalidate>
+ 
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="nameField" class="form-label">Full Name <span class="required-star">*</span></label>
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    id="nameField"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+ 
+                <div class="col-sm-6">
+                  <label for="emailField" class="form-label">Email Address <span class="required-star">*</span></label>
+                  <input
+                    type="email"
+                    class="form-control custom-input"
+                    id="emailField"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter a valid email address.</div>
+                </div>
+ 
+                <div class="col-12">
+                  <label for="subjectField" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control custom-input"
+                    id="subjectField"
+                    name="subject"
+                    placeholder="What's this about?"
+                  />
+                </div>
+ 
+                <div class="col-12">
+                  <label for="messageField" class="form-label">Message <span class="required-star">*</span></label>
+                  <textarea
+                    class="form-control custom-input"
+                    id="messageField"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project…"
+                    required
+                  ></textarea>
+                  <div class="invalid-feedback">Please enter your message.</div>
+                </div>
+ 
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary-custom w-100 py-3" id="submitBtn">
+                    <span class="btn-text">Send Message <i class="bi bi-send ms-2"></i></span>
+                    <span class="btn-loading d-none">
+                      <span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending…
+                    </span>
+                  </button>
+                </div>
+ 
+                <!-- Form feedback -->
+                <div class="col-12">
+                  <div id="formSuccess" class="form-feedback success d-none">
+                    <i class="bi bi-check-circle me-2"></i> Message sent! I'll get back to you soon.
+                  </div>
+                  <div id="formError" class="form-feedback error d-none">
+                    <i class="bi bi-exclamation-circle me-2"></i> Something went wrong. Please email me directly.
+                  </div>
+                </div>
+ 
+              </div>
+            </form>
+          </div>
+ 
+        </div>
+      </div>
+    </section>
+ 
+  </main>
+
 </body>
